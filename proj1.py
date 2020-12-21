@@ -32,40 +32,30 @@ f = open("test.txt", "a")
 f.write("hello world")
 f.close()
 #
-# 5. 用户指定一个数列，可以将1-10内数字英文单词变换成相应数字， 例如 [one, three, two, five, six] -> [1, 3, 2, 5, 6]
-to_num: Dict[str, int] = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7, 'eight': 8,
-                          'nine': 9, 'ten': 10}
-eng_num = []
-n = int(input("Please enter number of elements in the list: "))
-for i in range(0, n):
-    elem = str(input())
-    eng_num.append(to_num.get(elem))
-print(eng_num)
-
 
 # 6. 将给定数组里的数，分成奇数和偶数两个数列，分别打印出来。例如 [1,3,4,5,7,8,9,11,20] -> [1,3,5,7,9,11] [4,8,20]
-def even_odd(arr):
-    even = []
-    odd = []
-    for j in arr:
-        if j % 2 == 0:
-            even.append(j)
-        else:
-            odd.append(j)
-    print(even)
-    print(odd)
-
-
-array6 = []
-n = int(input("Please enter number of elements in the list: "))
-for i in range(0, n):
-    elem = int(input())
-    array6.append(elem)
-print(array6)
-even_odd(array6)
+# def even_odd(arr):
+#     even = []
+#     odd = []
+#     for j in arr:
+#         if j % 2 == 0:
+#             even.append(j)
+#         else:
+#             odd.append(j)
+#     print(even)
+#     print(odd)
+#
+#
+# array6 = []
+# n = int(input("Please enter number of elements in the list: "))
+# for i in range(0, n):
+#     elem = int(input())
+#     array6.append(elem)
+# print(array6)
+# even_odd(array6)
 #
 # 7. 给定一段话，找出最高频的那个单词。例子中的 music.
-text7 = "hey guys bla bla bla"
+text7 = "hey guys guys bla bla. bla."
 array7 = text7.split()
 max_ct = 0
 max_ind = 0
